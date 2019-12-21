@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 //#define Logical_operators
-#define Control_structures
+//#define Control_structures
+#define If_else
 
 void main()
 {
@@ -40,5 +41,18 @@ void main()
 	{
 		cout << "Вы на северном полюсе";
 	}
+#endif
+
+#ifdef If_else
+	int n;	//Количество итерацый
+	int i = 0;	//Счётчик цыкла
+	cout << "Введите количество итерацый: ";
+	cin >> n;
+	while (i < n)
+		{
+			cout << i << " Hello world" << endl;
+			i++;
+		}
+
 #endif
 }
