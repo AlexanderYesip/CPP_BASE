@@ -1,8 +1,10 @@
 #include<iostream>
+#include<conio.h>
 using namespace std;
 //#define Logical_operators
 //#define Control_structures
-#define If_else
+//#define While
+#define While_do_while
 
 void main()
 {
@@ -43,7 +45,7 @@ void main()
 	}
 #endif
 
-#ifdef If_else
+#ifdef While
 	int n;	//Количество итерацый
 	int i = 0;	//Счётчик цыкла
 	cout << "Введите количество итерацый: ";
@@ -53,6 +55,14 @@ void main()
 			cout << i << " Hello world" << endl;
 			i++;
 		}
+#endif
 
+#ifdef While_do_while
+	char key;
+	do
+	{
+		key = _getch();
+		cout << (int)key << "\t" << key << endl;
+	} while (key != 27);
 #endif
 }
